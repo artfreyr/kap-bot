@@ -510,12 +510,12 @@ def sendNotifications(updater):
         currentSecond = time.strftime("%S", time.localtime())
 
         #Check for notifications to send by the half hour
-        # if (int(currentMinute) > 0 and int(currentMinute) <= 30):
-        #     sleepDuration = abs(30 - int(currentMinute))
-        #     time.sleep(sleepDuration * 60)
-        # elif (int(currentMinute) > 30 and int(currentMinute) <= 59):
-        #     sleepDuration = abs(60 - int(currentMinute))
-        #     time.sleep(sleepDuration * 60)
+        if (int(currentMinute) > 0 and int(currentMinute) <= 30):
+            sleepDuration = abs(30 - int(currentMinute))
+            time.sleep(sleepDuration * 60)
+        elif (int(currentMinute) > 30 and int(currentMinute) <= 59):
+            sleepDuration = abs(60 - int(currentMinute))
+            time.sleep(sleepDuration * 60)
 
         #Obtain notifications from DB
         getScheduleCursor = kapbotdb.cursor(buffered=True)
