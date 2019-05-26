@@ -16,11 +16,10 @@ Python 3.6
 ```
 
 Python Modules:
-```
-[python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
-[configparser](https://pypi.org/project/configparser/)
-[mysql-connector](https://pypi.org/project/mysql-connector/)
-```
+* [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+* [configparser](https://pypi.org/project/configparser/)
+* [mysql-connector](https://pypi.org/project/mysql-connector/)
+
 
 ### Initial Configuration
 In order to get your instance of the bot running, you need to populate the config file with more information about your database connection as well as Telegram bot API key.
